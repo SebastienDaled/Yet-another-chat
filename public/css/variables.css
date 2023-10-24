@@ -1,0 +1,13 @@
+:root {
+    --body-background-color: #000;
+    --primary-text-color: #FFF;
+
+    --dark-blue-1000: #1D1E26;
+    --dark-blue-500: #22252E;
+    --dark-blue-200: #272b38;
+    --light-grey-100: #cfd4e4;
+    --light-grey-300: #a6acc3;
+
+
+    --cross-size: 1.5rem;
+}

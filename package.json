@@ -1,0 +1,30 @@
+{
+  "name": "opdracht02-yet-another-chat-sebastiendaled",
+  "version": "1.0.0",
+  "description": "chat",
+  "scripts": {
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "git:update": "git add . && git commit -a -m [WIP] && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdmgent-mobdev1/opdracht02-yet-another-chat-SebastienDaled.git"
+  },
+  "author": "Sebastien Daled-Rosseel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdmgent-mobdev1/opdracht02-yet-another-chat-SebastienDaled/issues"
+  },
+  "homepage": "https://github.com/gdmgent-mobdev1/opdracht02-yet-another-chat-SebastienDaled#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "parcel": "^2.7.0",
+    "process": "^0.11.10",
+    "tslint": "^6.1.3",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "firebase": "^9.13.0"
+  }
+}

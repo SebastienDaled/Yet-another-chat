@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.typekit.net/ebc2cjv.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Yet another Chat</title>
+</head>
+<body>
+  <div id="app">
+    <form action="" class="regestration signup hide">
+
+      <table class="">
+        <tr>
+          <td colspan="2">
+            <label for="email">Emailadres</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="email" name="email" placeholder="Fill in your emailadress">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="password">Username</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="text" name="username" placeholder="Fill in your Username" id="username">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="password">password</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="password" name="password" placeholder="Fill in your password">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button type="submit" class="btn btn-other btn-account">Signup</button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p>Or</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="test">
+            <button class="btn btn-other google">
+              <img src="./images/google-logo-png-google-icon-download-icons-18.png" alt="">
+            </button>
+          </td>
+          <td lass="test">
+            <button class="btn btn-other github">
+              <img src="./images/Octicons-mark-github.png" alt="">
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button id="loginBtn" class="btn third__btn">Already an Account? LOGIN</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <form action="" class="regestration login" >
+        <table>
+          <tr>
+            <td colspan="2">
+              <label for="email">Emailadres</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="email" name="email" placeholder="Fill in your emailadress">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label for="password">Password</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="password" name="password" placeholder="Fill in your password">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="submit" class="btn btn-other btn-account">login</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="test">
+              <button class="btn btn-other google">
+                <img src="./images/google-logo-png-google-icon-download-icons-18.png" alt="">
+              </button>
+            </td>
+            <td lass="test">
+              <button class="btn btn-other github">
+                <img src="./images/Octicons-mark-github.png" alt="">
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button id="signupBtn" class="btn third__btn">Need an account? SIGN UP</button>
+            </td>
+          </tr>
+        </table>
+    </form>
+
+
+    <section id="chats" class="chats hide">
+      <div class="menu" id="menu">
+        <div id="header" class="header">
+          <div class="header__item header__item--logo">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <div class="header__item header__item--right">
+            <div class="header__item header__item--img header__item--clickeble" id="searchBtn">
+              <img src="./images/icon-search.png" alt="search icon">
+            </div>
+            <div class="header__item header__item--img header__item--clickeble">
+              <!-- <button id="addChat">Add</button> -->
+              <img src="./images/addChat.png" alt="add a chat" id="addChat">
+            </div>
+            <div class="header__item header__item--settings header__item--clickeble options" id="options">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+        <div id="logout" class="logout hide">
+          <button class="logoutbtn">Logout</button>
+        </div>
+        <div id="searchbar" class="searchbar hide">
+          <input type="text" placeholder="Search" id="search" class="input-white">
+        </div>
+      </div>
+
+      <div id="chatsBalk" class="chats-chat">
+      </div>
+    </section>
+
+    <section id="chat" class="hide">
+      <div class="menu">
+        <div class="header">
+          <div class="name">
+            <div class="quit">
+              <div class="back1"></div>
+            </div>
+            <h3 id="chatname">chat name</h3>
+          </div>
+          <div class="header__item header__item--settings header__item--clickeble options" id="options2">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+          
+        </div>
+        <div id="soChat" class="logout hide">
+          <button class="logoutbtn">leave Groupchat</button>
+        </div>
+      </div>
+
+      <div id="messages" class="messages">
+      </div>
+
+      <div class="textField">
+        <form action="">
+          <div class="messaging">
+                <input type="text" class="input-white" id="inputMessage" placeholder="Send a message">
+                <button id="sendBtn" class="btn btn-message" type="button"><img src="./images/send.png" alt="send"></button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="addChatsContainer" class="addchat hide">
+      <form action="" id="addChats" class="addForm">
+        <table>
+          <tr>
+            <td>
+              <label for="naam">Chat Name</label>
+            </td>
+            <td>
+              <div class="quit">
+                <div class="cross1"></div>
+                <div class="cross2"></div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" name="naam" placeholder="Fill in the chatname"></td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit">Make Chat</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </div>
+  <script type="module" src="./scripts/index.ts"></script>
+</body>
+</html>
